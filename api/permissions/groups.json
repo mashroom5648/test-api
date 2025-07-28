@@ -15,6 +15,50 @@
             { "id": 3, "name": "更新", "code": "UPDATE" },
             { "id": 4, "name": "削除", "code": "DELETE" }
           ]
+        },
+        {
+          "id": 2,
+          "name": "タレント管理",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" },
+            { "id": 4, "name": "削除", "code": "DELETE" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "高度な管理",
+      "description": "ユーザー管理とシステム設定の管理機能",
+      "displayOrder": 2,
+      "permissions": [
+        {
+          "id": 3,
+          "name": "ユーザー管理",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" },
+            { "id": 4, "name": "削除", "code": "DELETE" }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "レポート管理",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "システム設定",
+          "operations": [
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" }
+          ]
         }
       ]
     }
