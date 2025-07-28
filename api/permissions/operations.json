@@ -1,0 +1,8 @@
+{
+  "permissionOperations": [
+    { "id": 1, "name": "作成", "code": "CREATE" },
+    { "id": 2, "name": "閲覧", "code": "READ" },
+    { "id": 3, "name": "更新", "code": "UPDATE" },
+    { "id": 4, "name": "削除", "code": "DELETE" }
+  ]
+}
