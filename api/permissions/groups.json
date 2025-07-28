@@ -1,0 +1,67 @@
+{
+  "permissionGroups": [
+    {
+      "id": 1,
+      "name": "基本管理",
+      "description": "オーディションとタレントの基本的な管理機能",
+      "displayOrder": 1,
+      "permissions": [
+        {
+          "id": 1,
+          "name": "オーディション管理",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" },
+            { "id": 4, "name": "削除", "code": "DELETE" }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "タレント管理",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" },
+            { "id": 4, "name": "削除", "code": "DELETE" }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "キャスティング管理",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" },
+            { "id": 4, "name": "削除", "code": "DELETE" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "システム管理",
+      "description": "システム設定とレポート機能",
+      "displayOrder": 2,
+      "permissions": [
+        {
+          "id": 4,
+          "name": "レポート閲覧",
+          "operations": [
+            { "id": 2, "name": "閲覧", "code": "READ" }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "システム設定",
+          "operations": [
+            { "id": 1, "name": "作成", "code": "CREATE" },
+            { "id": 2, "name": "閲覧", "code": "READ" },
+            { "id": 3, "name": "更新", "code": "UPDATE" },
+            { "id": 4, "name": "削除", "code": "DELETE" }
+          ]
+        }
+      ]
+    }
+  ]
+}
