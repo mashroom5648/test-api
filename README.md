@@ -56,57 +56,42 @@ api/
 ```
 
 
+
 ### 利用可能なエンドポイント
-
-#### パーミッション管理
-
-- **パーミッション操作一覧**
-  ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/permissions/operations
-  ```
 
 - **パーミッション一覧**
   ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/permissions/list
+  GET https://my-json-server.typicode.com/mashroom5648/test-api/permissions
   ```
 
 - **パーミッショングループ一覧**
   ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/permissions/groups
+  GET https://my-json-server.typicode.com/mashroom5648/test-api/permissionGroups
   ```
 
-#### ロール管理
-
-- **管理者ロール詳細**
+- **パーミッション操作一覧**
   ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/roles/admin/detail
+  GET https://my-json-server.typicode.com/mashroom5648/test-api/permissionOperations
   ```
 
-- **管理者ロール更新データ**
+- **ロール一覧**
   ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/roles/admin/update
-  ```
-
-- **ディレクターロール詳細**
-  ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/roles/director/detail
+  GET https://my-json-server.typicode.com/mashroom5648/test-api/roles
   ```
 
-- **ディレクターロール更新データ**
-  ```
-  GET https://my-json-server.typicode.com/mashroom5648/test-api/api/roles/director/update
-  ```
+> ※ `/roles/admin/detail` などの階層パスではデータは取得できません。`/roles` で全ロールを取得し、必要に応じてクライアント側でフィルタしてください。
+
 
 ### データ構造の説明
 
-#### パーミッション操作 (operations.json)
+#### パーミッション操作 (`permissionOperations`)
 基本的なCRUD操作の定義：
 - `CREATE`: 作成権限
 - `READ`: 閲覧権限
 - `UPDATE`: 更新権限
 - `DELETE`: 削除権限
 
-#### パーミッション一覧 (list.json)
+#### パーミッション一覧 (`permissions`)
 システム内の具体的なパーミッション：
 - オーディション管理（作成・閲覧・更新・削除）
 - タレント管理（作成・閲覧・更新・削除）
@@ -114,14 +99,14 @@ api/
 - レポート閲覧（閲覧のみ）
 - システム設定（作成・閲覧・更新・削除）
 
-#### パーミッショングループ (groups.json)
+#### パーミッショングループ (`permissionGroups`)
 関連するパーミッションをグループ化：
 - 基本管理: オーディション、タレント、キャスティング管理
 - システム管理: レポート閲覧、システム設定
 
-#### ロール詳細
+#### ロール一覧 (`roles`)
 - **管理者**: 全権限を持つロール（permissions: [1, 2, 3, 4, 5]）
-- **ディレクター**: プロジェクト管理・チーム運営を担当し、権限ID [1, 2, 4]（オーディション管理・タレント管理・レポート閲覧）を持つロール
+- **ディレクター**: オーディション管理・タレント管理・レポート閲覧の権限を持つロール（permissions: [1, 2, 4]）
 
 ## 参考リンク
 
