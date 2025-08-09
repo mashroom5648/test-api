@@ -1,0 +1,13 @@
+{
+  "template": {
+    "id": 1,
+    "name": "基本テンプレート",
+    "organizerId": 1,
+    "items": [1, 2, 3, 4],
+    "description": "基本的な機能セットを持つテンプレートです。",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "updatedAt": "2024-07-20T14:22:00Z",
+    "updatedBy": "システム管理者",
+    "lastUpdated": "2024/07/20 14:22"
+  }
+}
