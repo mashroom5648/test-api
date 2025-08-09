@@ -1,14 +1,14 @@
 {
-  "permissionGroups": [
+  "categories": [
     {
       "id": 1,
-      "name": "基本管理",
-      "description": "オーディションとタレントの基本的な管理機能",
+      "name": "基本機能",
+      "description": "アイテムとカテゴリの基本的な管理機能",
       "displayOrder": 1,
-      "permissions": [
+      "items": [
         {
           "id": 1,
-          "name": "オーディション管理",
+          "name": "アイテム管理",
           "operations": [
             { "id": 1, "name": "作成", "code": "CREATE" },
             { "id": 2, "name": "閲覧", "code": "READ" },
@@ -18,7 +18,7 @@
         },
         {
           "id": 2,
-          "name": "タレント管理",
+          "name": "カテゴリ管理",
           "operations": [
             { "id": 1, "name": "作成", "code": "CREATE" },
             { "id": 2, "name": "閲覧", "code": "READ" },
@@ -28,7 +28,7 @@
         },
         {
           "id": 3,
-          "name": "キャスティング管理",
+          "name": "タグ管理",
           "operations": [
             { "id": 1, "name": "作成", "code": "CREATE" },
             { "id": 2, "name": "閲覧", "code": "READ" },
@@ -40,10 +40,10 @@
     },
     {
       "id": 2,
-      "name": "システム管理",
+      "name": "高度な機能",
       "description": "システム設定とレポート機能",
       "displayOrder": 2,
-      "permissions": [
+      "items": [
         {
           "id": 4,
           "name": "レポート閲覧",
